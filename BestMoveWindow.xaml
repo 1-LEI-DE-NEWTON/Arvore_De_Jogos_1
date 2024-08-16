@@ -1,0 +1,16 @@
+﻿<Window x:Class="Arvore_De_Jogos_1.BestMoveWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Melhor Jogada" Height="300" Width="400">
+    <Grid>
+
+        <TextBlock x:Name="MoveSuggestionTextBlock" Text="Melhor jogada será exibida aqui" 
+                   VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap"
+                   FontSize="40"/>
+        <TextBox x:Name="TreeViewTextBox" VerticalAlignment="Top" HorizontalAlignment="Center" 
+                 Margin="0,209,0,0" Width="350" Height="55" TextWrapping="Wrap" IsReadOnly="True"
+                 AcceptsReturn="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"
+                 />
+
+    </Grid>
+</Window>

@@ -1,0 +1,50 @@
+﻿<Window x:Class="Arvore_De_Jogos_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Arvore_De_Jogos_1"
+        mc:Ignorable="d"
+        Title="Jogo da velha" Height="450" Width="800">
+    <Grid x:Name="GameGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Indicador de Status -->
+        <TextBlock x:Name="StatusTextBlock" 
+                   Text="Vez do jogador X"
+                   FontSize="20"
+                   HorizontalAlignment="Center"
+                   Margin="0,10,0,10"/>
+
+        <!-- Tabuleiro -->
+        <Grid x:Name="tabuleiroGrid"
+            Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="0" Grid.Column="0" Click="OnCellClick" FontWeight="Bold" FontSize="72"/>
+            <Button Grid.Row="0" Grid.Column="1" Click="OnCellClick" FontWeight="Bold" FontSize="72"/>
+            <Button Grid.Row="0" Grid.Column="2" Click="OnCellClick" FontWeight="Bold" FontSize="72"/>
+            <Button Grid.Row="1" Grid.Column="0" Click="OnCellClick" FontWeight="Bold" FontSize="72"/>
+            <Button Grid.Row="1" Grid.Column="1" Click="OnCellClick" FontWeight="Bold" FontSize="72"/>
+            <Button Grid.Row="1" Grid.Column="2" Click="OnCellClick" FontWeight="Bold" FontSize="72"/>
+            <Button Grid.Row="2" Grid.Column="0" Click="OnCellClick" FontWeight="Bold" FontSize="72"/>
+            <Button Grid.Row="2" Grid.Column="1" Click="OnCellClick" FontWeight="Bold" FontSize="72"/>
+            <Button Grid.Row="2" Grid.Column="2" Click="OnCellClick" FontWeight="Bold" FontSize="72"/>
+        </Grid>
+    </Grid>
+</Window>
